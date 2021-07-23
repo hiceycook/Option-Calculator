@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Options Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Stock Options Caclulator</h1>
+
+    <!-- Here is the form -->
+    <div class="flex-container">
+        <!-- <h2>Strike Price</h2>
+        <h2>Price Per Contract</h2>
+        <h2>Number of Contracts</h2>
+        <h2>Price at Expiration</h2>
+        <h2 class="output">Total Profit/Loss</h2>
+        <h2 class="output">Percent Gain/Loss</h2> -->
+        <form action="">
+
+            <p class="form-group">
+                <label for="StrikePrice">Strike Price</label>
+                <input id="StrikePrice" type="number" step="any" name="StrikePrice">
+            </p>
+            <p class="form-group">
+                <label for="PricePerContract">Price Per Contract</label>
+                <input id="PricePerContract" type="number" step="any" name="PricePerContract">
+            </p>
+            <p class="form-group">
+                <label for="NumberOfContract">Number of Contracts</label>
+                <input id="NumberOfContract" type="number" step="any" name="NumberOfContract">
+            </p>
+            <p class="form-group">
+                <label for="PriceAtExp">Price at Expiration</label>
+                <input id="PriceAtExp" type="number" step="any" name="PriceAtExp">
+            </p>
+            <div class="button"><button>Calculate</button></div>
+        </form>
+        <br><br>
+        <div class="form-group">
+            <p class="output">Total Profit/Loss <span><output id="profit-loss"></output></span></p>
+            <p class="output">Percent Gain/Loss <span><output id="percent"></output></span></p>
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="optioncalc.js"></script>
+    <script>
+        $("form-group").on("input")
+    </script>
+</body>
+
+</html>

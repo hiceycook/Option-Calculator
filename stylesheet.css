@@ -1,0 +1,83 @@
+body{
+    background-color: white;
+    background-size:cover;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    color:#0093FF;
+    margin-top: 50px;
+    margin-bottom: 75px;
+text-align: center;
+-webkit-text-stroke: 1px navy;
+}
+
+.flex-container{
+display:flex;
+flex-direction: column;
+margin:auto;
+width:500px;
+height:500px;
+padding:40px;
+border-radius:20px;
+box-sizing: border-box;
+background: #f1f5f8;
+box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+
+
+
+p{
+    display:flex;
+    color:#0093FF;
+    font-size:1.5rem;
+    justify-content: space-between;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
+
+ input{
+/* display: flex; */
+     max-width:63px;
+     border-radius: 20px;
+     border-color:#0093FF ;
+     text-align: center;
+ }
+
+ label{
+     /* display: flex; */
+     text-align: right;
+ }
+
+.output{
+    color:black;
+}
+
+button{
+    padding:7.5px;
+    background-color: #0093FF;
+    border-radius: 20px;
+    border: 1px solid #0093FF;
+    color: white;
+}
+button:hover{
+    border:1px solid #0093FF;
+    background-color:#f1f5f8;
+    color:#0093FF;
+    cursor: pointer;
+}
+
+.button{
+    text-align: right;
+}
